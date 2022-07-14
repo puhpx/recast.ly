@@ -1,4 +1,5 @@
-var VideoListEntry = () => (
+import exampleVideoData from '../data/exampleVideoData.js';
+var VideoListEntry = (props) => (
   <div className="video-list-entry media">
     <div className="media-left media-middle">
       <img className="media-object" src="https://i.ytimg.com/vi/1w8Z0UOXVaY/default.jpg" alt="" />
@@ -10,12 +11,30 @@ var VideoListEntry = () => (
   </div>
 );
 
+
+// var TodoList = (props) => (
+//   <ul>
+//     <li>{props.todos[0]}</li>
+//     <li>{props.todos[1]}</li>
+//     <li>{props.todos[2]}</li>
+//   </ul>
+// );
+
+// var App = () => (
+//   <div>
+//     <h2>My Todo List</h2>
+//     <TodoList todos={['Learn React', 'Crush Recast.ly', 'Maybe sleep']}/> // Here we are creating an instance of the `TodoList` component
+//   </div>
+// );
+
+
+
+
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
 VideoListEntry.propTypes = {
   video: PropTypes.object.isRequired
 };
-
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined
 export default VideoListEntry;
