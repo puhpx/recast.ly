@@ -1,6 +1,6 @@
 // import exampleVideoData from '../data/exampleVideoData.js';
 var VideoListEntry = (props) => {
-  console.log('propsInVLE', props);
+  // console.log('propsInVLE', props);
   return (
     <div className="video-list-entry media">
       <div className="media-left media-middle">
